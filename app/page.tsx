@@ -14,11 +14,19 @@ export default function QuinceAnosPage() {
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null)
 
   useEffect(() => {
-    // Crear elemento de audio para música de fondo
-    const audioElement = new Audio("/cancion.mp3?query=elegant quinceañera waltz music")
+    const audioElement = new Audio("/cancion.mp3")
     audioElement.loop = true
     audioElement.volume = 0.3
     setAudio(audioElement)
+
+    // Intentar reproducir de inmediato
+    audioElement.play()
+      .then(() => {
+        setIsMusicPlaying(true)
+      })
+      .catch(err => {
+        console.warn("Autoplay bloqueado, el usuario debe dar play:", err)
+      })
 
     return () => {
       if (audioElement) {
