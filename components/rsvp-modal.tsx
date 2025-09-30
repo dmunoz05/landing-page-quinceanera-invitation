@@ -36,7 +36,7 @@ export function RSVPModal({ isOpen, onClose }: RSVPModalProps) {
     💬 Mensaje: ${formData.message || "Ninguno"}`
 
     // Número destino (pon el tuyo en formato internacional sin + ni espacios)
-    const numeroDestino = "573214930079"
+    const numeroDestino = "573224836927"
 
     // Crear link de WhatsApp
     const url = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(mensaje)}`
