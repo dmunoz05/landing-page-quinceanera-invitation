@@ -59,7 +59,7 @@ export default function QuinceAnosPage() {
           <div className="mb-8 opacity-0 animate-fade-in-up">
             <div className="relative inline-block">
               <div className="w-80 h-80 md:w-96 md:h-96 mx-auto rounded-full overflow-hidden border-8 border-primary/20 shadow-2xl">
-                <img src="/elegant-quincea-era-portrait-in-beautiful-dress.jpg" alt="Quinceañera" className="w-full h-full object-cover" />
+                <img src="/image-quinceanera.png" alt="Quinceañera" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -top-4 -right-4 animate-sparkle">
                 <Heart className="w-8 h-8 text-primary fill-current" />
@@ -82,7 +82,7 @@ export default function QuinceAnosPage() {
 
           {/* Contador regresivo */}
           <div className="opacity-0 animate-fade-in-up animate-delay-400 mb-12">
-            <CountdownTimer targetDate="2024-12-31T20:00:00" />
+            <CountdownTimer targetDate="2025-10-25T20:00:00" />
           </div>
 
           {/* Botón RSVP principal */}
@@ -114,7 +114,7 @@ export default function QuinceAnosPage() {
                   <Calendar className="w-12 h-12 text-primary mx-auto" />
                 </div>
                 <h3 className="font-playfair text-2xl font-semibold mb-2 text-card-foreground">Fecha</h3>
-                <p className="text-muted-foreground text-lg">[Colocar aquí la fecha del evento]</p>
+                <p className="text-muted-foreground text-lg">25 de Octubre 2025</p>
               </CardContent>
             </Card>
 
@@ -125,7 +125,7 @@ export default function QuinceAnosPage() {
                   <Clock className="w-12 h-12 text-accent mx-auto" />
                 </div>
                 <h3 className="font-playfair text-2xl font-semibold mb-2 text-card-foreground">Hora</h3>
-                <p className="text-muted-foreground text-lg">[Colocar la hora]</p>
+                <p className="text-muted-foreground text-lg">7:30 PM</p>
               </CardContent>
             </Card>
 
@@ -136,7 +136,7 @@ export default function QuinceAnosPage() {
                   <MapPin className="w-12 h-12 text-secondary mx-auto" />
                 </div>
                 <h3 className="font-playfair text-2xl font-semibold mb-2 text-card-foreground">Lugar</h3>
-                <p className="text-muted-foreground text-lg">[Colocar la dirección]</p>
+                <p className="text-muted-foreground text-lg">Calle 44 # 71 - 103 (Salon Magenta)</p>
               </CardContent>
             </Card>
 
@@ -147,7 +147,7 @@ export default function QuinceAnosPage() {
                   <Shirt className="w-12 h-12 text-chart-4 mx-auto" />
                 </div>
                 <h3 className="font-playfair text-2xl font-semibold mb-2 text-card-foreground">Vestimenta</h3>
-                <p className="text-muted-foreground text-lg">[Indicar si es formal, casual, etc.]</p>
+                <p className="text-muted-foreground text-lg">Formal</p>
               </CardContent>
             </Card>
 
@@ -158,7 +158,7 @@ export default function QuinceAnosPage() {
                   <Gift className="w-12 h-12 text-chart-5 mx-auto" />
                 </div>
                 <h3 className="font-playfair text-2xl font-semibold mb-2 text-card-foreground">Lluvia de Sobres</h3>
-                <p className="text-muted-foreground text-lg">[Colocar nota si aplica]</p>
+                <p className="text-muted-foreground text-lg">Si</p>
               </CardContent>
             </Card>
 
@@ -169,7 +169,7 @@ export default function QuinceAnosPage() {
                   <Music className="w-12 h-12 text-primary mx-auto" />
                 </div>
                 <h3 className="font-playfair text-2xl font-semibold mb-2 text-card-foreground">Música</h3>
-                <p className="text-muted-foreground text-lg">DJ en vivo y pista de baile</p>
+                <p className="text-muted-foreground text-lg">Música y pista de baile</p>
               </CardContent>
             </Card>
           </div>

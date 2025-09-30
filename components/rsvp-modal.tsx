@@ -27,11 +27,26 @@ export function RSVPModal({ isOpen, onClose }: RSVPModalProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Aquí se manejaría el envío del formulario
-    console.log("RSVP enviado:", formData)
+
+    // Construir mensaje
+    const mensaje = `👋 Hola, soy ${formData.name}.
+    📧 Email: ${formData.email || "No proporcionado"}
+    📱 Teléfono: ${formData.phone || "No proporcionado"}
+    👥 Invitados: ${formData.guests}
+    💬 Mensaje: ${formData.message || "Ninguno"}`
+
+    // Número destino (pon el tuyo en formato internacional sin + ni espacios)
+    const numeroDestino = "573214930079"
+
+    // Crear link de WhatsApp
+    const url = `https://wa.me/${numeroDestino}?text=${encodeURIComponent(mensaje)}`
+
+    // Abrir WhatsApp
+    window.open(url, "_blank")
+
     setIsSubmitted(true)
 
-    // Simular envío y cerrar modal después de 2 segundos
+    // Resetear y cerrar
     setTimeout(() => {
       setIsSubmitted(false)
       onClose()
