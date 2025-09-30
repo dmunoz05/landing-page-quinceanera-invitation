@@ -15,7 +15,7 @@ export default function QuinceAnosPage() {
 
   useEffect(() => {
     // Crear elemento de audio para música de fondo
-    const audioElement = new Audio("/placeholder.mp3?query=elegant quinceañera waltz music")
+    const audioElement = new Audio("/cancion.mp3?query=elegant quinceañera waltz music")
     audioElement.loop = true
     audioElement.volume = 0.3
     setAudio(audioElement)
